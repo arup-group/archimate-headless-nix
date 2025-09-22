@@ -15,7 +15,7 @@ nix run github:arup-group/archimate-headless-nix#archi
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   inputs.archimate-headless-nix.url = "github:arup-group/archimate-headless-nix";
 
-  # optionaly: set archimate-headless-nix to follow nixpkgs
+  # optionally: set archimate-headless-nix to follow nixpkgs
   inputs.archimate-headless-nix.inputs.nixpkgs.follows = "nixpkgs";
 
   outputs = { self, nixpkgs, archimate-headless-nix }:
