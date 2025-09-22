@@ -8,7 +8,7 @@ if pkgs.stdenv.isDarwin then
 else
 
   pkgs.writeShellApplication {
-    name = pkgs.archi.pname;
+    name = "${pkgs.archi.name}-headless";
     runtimeInputs = with pkgs; [ xvfb-run archi ];
 
     text = ''
