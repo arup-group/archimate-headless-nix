@@ -25,5 +25,7 @@ else
         It allows you to use Archi's command line interface on systems without a graphical display.
       '';
       mainProgram = pkgs.archi.name;
+      license = pkgs.archi.meta.license;
+      maintainers = [{ name = "Dominic Egginton"; email = "dom.egginton@arup.com"; }];
     };
   }
